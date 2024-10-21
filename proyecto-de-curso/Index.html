@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de Bombas</title>
+  <link rel="stylesheet" href="css/styles.css"> <!-- Ruta corregida -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="control-bombas">
+    <header class="control-bombas__header">
+      <h1 class="control-bombas__title">Control de Bombas</h1>
+    </header>
+    
+    <section class="bomba bomba--1">
+      <h2 class="bomba__title">Bomba 1</h2>
+      <div class="bomba__status" id="bomba1Status">Desactivada</div>
+      <div class="bomba__controls">
+        <button class="bomba__button bomba__button--activate" id="activarBomba1">Activar Bomba 1</button>
+        <button class="bomba__button bomba__button--deactivate" id="desactivarBomba1">Desactivar Bomba 1</button>
+      </div>
+      <article class="bomba__historial">
+        <h3 class="bomba__historial-title">Historial Bomba 1</h3>
+        <table class="bomba__table">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Estado</th>
+              <th>Función Sensor</th>
+            </tr>
+          </thead>
+          <tbody id="historialBomba1"></tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="bomba bomba--2">
+      <h2 class="bomba__title">Bomba 2</h2>
+      <div class="bomba__status" id="bomba2Status">Desactivada</div>
+      <div class="bomba__controls">
+        <button class="bomba__button bomba__button--activate" id="activarBomba2">Activar Bomba 2</button>
+        <button class="bomba__button bomba__button--deactivate" id="desactivarBomba2">Desactivar Bomba 2</button>
+      </div>
+      <article class="bomba__historial">
+        <h3 class="bomba__historial-title">Historial Bomba 2</h3>
+        <table class="bomba__table">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Estado</th>
+              <th>Función Sensor</th>
+            </tr>
+          </thead>
+          <tbody id="historialBomba2"></tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="control-mode">
+      <h2 class="control-mode__title">Modo de Control</h2>
+      <button class="control-mode__button" id="modoManual">Modo Manual</button>
+      <button class="control-mode__button" id="modoAutomatico">Modo Automático</button>
+    </section>
+  </div>
+
+  <script src="js/script.js"></script> <!-- Ruta del archivo JS corregida -->
+</body>
+</html>

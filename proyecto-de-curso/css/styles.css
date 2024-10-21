@@ -1,0 +1,135 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8; /* Un gris claro para el fondo */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal */
+  .control-bombas {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordes redondeados */
+    border: 2px solid #d1d9e6; /* Bordes con color */
+  }
+  
+  /* Título principal */
+  .control-bombas__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #2c3e50; /* Un azul oscuro */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Espaciado entre letras */
+  }
+  
+  /* Títulos de las secciones */
+  .bomba__title, .control-mode__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #34495e; /* Azul grisáceo */
+    text-align: center;
+    border-bottom: 2px solid #3498db; /* Línea de separación con color */
+    padding-bottom: 5px;
+  }
+  
+  /* Estado de las bombas */
+  .bomba__status {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f1c40f; /* Amarillo para el estado inicial (desactivada) */
+    color: #fff;
+  }
+  
+  .bomba__status.activada {
+    background-color: #2ecc71; /* Verde para activada */
+  }
+  
+  .bomba__status.desactivada {
+    background-color: #e74c3c; /* Rojo para desactivada */
+  }
+  
+  /* Controles de las bombas */
+  .bomba__controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .bomba__button {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bomba__button--activate {
+    background-color: #27ae60; /* Verde para activar */
+  }
+  
+  .bomba__button--deactivate {
+    background-color: #c0392b; /* Rojo para desactivar */
+  }
+  
+  .bomba__button:hover {
+    opacity: 0.8; /* Efecto hover de opacidad */
+  }
+  
+  /* Historial */
+  .bomba__historial-title {
+    margin-bottom: 10px;
+    color: #2980b9; /* Azul */
+  }
+  
+  .bomba__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bomba__table th, .bomba__table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .bomba__table th {
+    background-color: #3498db; /* Azul para la cabecera */
+    color: white;
+  }
+  
+  .bomba__table td {
+    background-color: #ecf0f1; /* Celeste claro para las filas */
+    color: #2c3e50;
+  }
+  
+  /* Controles de modo */
+  .control-mode {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .control-mode__button {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f39c12; /* Naranja para el botón de modo */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .control-mode__button:hover {
+    background-color: #e67e22; /* Más oscuro al hacer hover */
+  }
+  
